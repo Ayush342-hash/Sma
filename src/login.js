@@ -30,7 +30,7 @@ from 'mdb-react-ui-kit';
               <MDBInput wrapperClass='mb-4 mx-5 w-100' labelClass='text-white' label='Password' id='formControlLg' type='password' size="lg"/>
 
               <p className="small mb-3 pb-lg-2"><a className="text-white-50" href="#!">Forgot password?</a></p>
-              <MDBBtn wrapperClass='mx-2 px-5 text-white  w-100 ' size='lg'>
+              <MDBBtn a href="/app" wrapperClass='mx-2 px-5 text-white  w-100 ' size='lg'>
                 Login
               </MDBBtn>
 

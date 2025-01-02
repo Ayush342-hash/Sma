@@ -1,18 +1,19 @@
-import { Outlet, Link } from "react-router-dom";
+import React from "react";
+import { Outlet } from "react-router-dom";
 
-const Layout = () => {
+function Route() {
   return (
-    <>
-      <nav>
-        
-            <Link to="/login"></Link>
-            <Link to="/register"></Link>
-            <Link to="/details"></Link>
-      </nav>
-
-      <Outlet />
-    </>
-  )
-};
-
-export default Layout;
+    <div>
+      < a href="/home"></a>
+          <a href="/login"> </a> 
+           <a href="/register"></a> 
+           <a href="/details"></a>
+           <a href="/app"></a>
+     
+     
+        <Outlet />
+     
+    </div>
+  );
+}
+export default Route;
