@@ -1,20 +1,20 @@
 import React from 'react';
 import Navbar from './components/navbar';
-import './components/navbar.css';
+import PostBox from './components/postbox';
+import Sidebar from './components/sidebar';
 function App() {
   return (
-    <div>
-      <Navbar />
+    <div className='app'>
+      <Navbar/>
+      <aside className="main-content">
+        
+          <PostBox/>
       
-      {/* Main content area for social media posts */}
-      <main>
-        <div className="post">
-          
-         <h1>main</h1>
+          <div className="main-content-body">
         </div>
-
-        {/* Add more posts as necessary */}
-      </main>
+        
+</aside>
+<Sidebar/>
     </div>
   );
 }

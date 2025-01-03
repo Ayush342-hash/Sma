@@ -1,0 +1,13 @@
+/* src/App.css */
+
+  
+  .sideBar {
+    width: 250px;
+    padding: 20px;
+    float: right;
+    background-color: #f9f9f9;
+    border-left: 1px solid #ddd; /* Changed from border-right to border-left for alignment */
+    height: 100vh;
+    overflow-y: auto;
+  }
+  

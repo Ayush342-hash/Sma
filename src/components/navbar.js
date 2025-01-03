@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './navbar.css';
 
+
 const Navbar = () => {
   const [showMore, setShowMore] = useState(false);
 
@@ -23,6 +24,11 @@ const Navbar = () => {
     "Gaming Squad",
     "Project Team",
     "Family Group",
+    "Music Enthusiasts",
+    "Tech Enthusiasts",
+    "Cinema Buffs",
+    "Bookworms",
+    "Fitness Enthusiasts",
   ];
 
   const visibleItems = showMore ? sidebarItems : sidebarItems.slice(0, 6);
@@ -35,6 +41,18 @@ const Navbar = () => {
           <a href="/" className="logo">
             CircleNet
           </a>
+        </div>
+        <div className="navbar-center">
+          <a className="search-icon">
+        <i className="fas fa-search"></i>
+        </a>
+        </div>
+        <div className="navbar-center">
+        <input
+          className="search-input"
+          type="text"
+            placeholder="Search"
+        />
         </div>
         <div className="navbar-right">
           <a href="/account" className="user-icon">
